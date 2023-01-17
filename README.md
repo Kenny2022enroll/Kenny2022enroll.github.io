@@ -5,6 +5,6 @@
 ### 更新日志：该版本正在内测中，不提供更新日志。
 <html>
   <body>
-    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">POLA</a>
+    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">POLA</a> <h5>23.01.17•POLA公告</h5>
   </body>
 </html>
