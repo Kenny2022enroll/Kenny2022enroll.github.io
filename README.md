@@ -7,6 +7,6 @@
 ### 更新日志：首个开源POLA OS现已推出，供小伙伴们快速方便地定制您的系统。
 <html>
   <body>
-    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">POLA</a><h5>23.01.18•POLA公告</h5>
+    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">23.01.18•POLA公告</a>
   </body>
 </html>
