@@ -6,12 +6,13 @@
     <h3>最新稳定版：Stable 3.0</h3>
     <h4>更新内容：首个POLA OS 3稳定版现已推出，给大家带来了全新的视觉体验和更棒的操作方式。</h4>
     <a href="https://labplus.cn/posts/63b7fc1426583e3e3354fe39">Stable 3.0</a>
-    <h3>最新测试版：Test 23.01.21</h3>
-    <h4>更新内容：内容过长，请点击蓝色版本号查看。</h4>
+    <h3>最新测试版：Test 23.01.27</h3>
+    <h4>更新内容：内部测试中，暂时不可查看。</h4>
     <a href="https://labplus.cn/posts/63cb83044e7b2f0973a01554">Test 23.01.21</a>
     <h3>最新开源系统：OPEN 1.0</h3>
     <h4>更新内容：首个开源POLA OS现已推出，供小伙伴们快速方便地定制您的系统。</h4>
     <a href="https://labplus.cn/posts/63abffc426583e3e3354faf7">OPEN 1.0</a>
-    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">23.01.21•POLA公告</a>
+    <h3>2023.01.28•</h3>
+    <a href="https://labplus.cn/people/6008280b99b3da6b2b5de175">POLA公告</a>
   </body>
 </html>
