@@ -1,2 +1,2 @@
 KENNY💕💕Susie
-![](https://com.miui.notes/note_image/b284522d7d59c27e266e912e6d4201fa61a16c65
+![IMG_20230507_100733.jpeg](https://s1.imagehub.cc/images/2023/05/07/IMG_20230507_100733.jpeg)
