@@ -60,6 +60,17 @@
     </a>
     </p>
     <hr/>
+    
+    <h2>今天过得怎么样😊</h2>
+    <form action="">
+    <input type="radio" name="mood" value="Happy">很好✌️<br>
+    <input type="radio" name="mood" value="notbad">一般般🧐<br>
+    <input type="radio" name="mood" value="bad">不太好😔
+    </form>
+    <hr/>
+    
+    <h2 style="text-align:center;">祝您拥有一个美好的未来！</h2>
+    <h2 style="text-align:center;">本网站由 恺撒！ 制作</h2>
 
 </body>
 </html>
