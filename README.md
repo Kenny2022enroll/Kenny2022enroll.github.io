@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+[<DOCTYPE! html>
 <html>
 
 <head>
@@ -74,3 +74,4 @@
 
 </body>
 </html>
+](https://chat18.aichatos.xyz/)https://chat18.aichatos.xyz/
