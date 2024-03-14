@@ -47,6 +47,9 @@
     <a href="https://www.kdocs.cn/">
         <img src="https://s1.imagehub.cc/images/2024/01/29/f0bb215448f648ae69d6ad8ead29e0f9.th.png" alt="金山文档" width="110" length="110" border="0" />
     </a>
+    <a href="https://chat18.aichatos.xyz/">
+        <img src="">
+    ](https://chat18.aichatos.xyz/)https://chat18.aichatos.xyz/
     </p>
     <hr/>
 
@@ -74,4 +77,3 @@
 
 </body>
 </html>
-](https://chat18.aichatos.xyz/)https://chat18.aichatos.xyz/
