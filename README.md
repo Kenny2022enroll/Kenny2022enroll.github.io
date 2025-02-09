@@ -43,15 +43,19 @@
             text-decoration: none;
             color: #333;
             background: #e2e2e2;
-            padding: 10px;
+            padding: 20px;
             margin: 10px;
             width: 100px;
             text-align: center;
-            border-radius: 5px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .content a:hover {
             background: #77aaff;
             color: #fff;
+            transform: translateY(-10px) rotateX(20deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         footer {
             background: #333;
@@ -80,10 +84,6 @@
         <a href="https://www.bilibili.com/">哔哩哔哩</a>
     </div>
 
-    <footer>
-        <p>祝您拥有一个美好的未来！</p>
-        <p>本网站由 恺撒！ 制作</p>
-    </footer>
 </body>
 
 </html>
