@@ -25,17 +25,34 @@
             overflow: hidden;
         }
         header {
-            background: rgba(51, 51, 51, 0.3); /* 半透明背景 */
+            background: rgba(51, 51, 51, 0.4); /* 半透明背景 */
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
-            backdrop-filter: blur(20px); /* 毛玻璃效果 */
+            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         header h1 {
             text-align: center;
             margin: 0;
             padding-bottom: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(119, 170, 255, 0.4); /* 半透明背景 */
+            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         .content {
             display: flex;
@@ -62,12 +79,12 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background: rgba(51, 51, 51, 0.3); /* 半透明背景 */
+            background: rgba(51, 51, 51, 0.4); /* 半透明背景 */
             color: #fff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            backdrop-filter: blur(20px); /* 毛玻璃效果 */
+            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         .tools {
             margin-top: 20px;
@@ -75,18 +92,19 @@
             justify-content: center;
         }
         .tool {
-            background: rgba(226, 226, 226, 0.3); /* 半透明背景 */
+            background: rgba(226, 226, 226, 0.4); /* 半透明背景 */
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(20px); /* 毛玻璃效果 */
+            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         .tool:hover {
-            background: rgba(119, 170, 255, 0.7); /* 半透明背景 */
+            background: rgba(119, 170, 255, 0.4); /* 半透明背景 */
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         .tool input[type="text"], .tool textarea {
             width: 100%;
@@ -94,7 +112,7 @@
             margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            background: rgba(255, 255, 255, 0.4); /* 半透明背景 */
         }
         .tool button {
             padding: 10px 20px;
@@ -108,6 +126,9 @@
         .tool button:hover {
             background: #5588ff;
         }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
@@ -115,24 +136,39 @@
     <header>
         <div class="container">
             <h1>网页快捷导览</h1>
+            <nav>
+                <a href="#" onclick="showCategory('all')">全部</a>
+                <a href="#" onclick="showCategory('blog')">博客</a>
+                <a href="#" onclick="showCategory('community')">社区</a>
+                <a href="#" onclick="showCategory('tools')">工具</a>
+            </nav>
         </div>
     </header>
 
     <div class="container content">
-        <a href="https://foreverblog.cn/go.html">十年之约</a>
-        <a href="https://www.boyouquan.com/planet-shuttle">博友圈</a>
-        <a href="https://zhblogs.ohyee.cc/go">中文博客</a>
-        <a href="https://bokelu.suijiboke.gs/">博客录</a>
-        <a href="https://blogscn.fun/random.html">笔墨迹</a>
-        <a href="https://storeweb.cn/s/1656">个站商店</a>
-        <a href="https://www.travellings.cn/go.html">开往</a>
-        <a href="https://baidu.com/">百度</a>
-        <a href="https://sz-api.ai-study.net/index.html">学习助手</a>
-        <a href="https://basic.sh.smartedu.cn/airclassroom/">上海微校</a>
-        <a href="https://www.kdocs.cn/">金山文档</a>
-        <a href="https://chat18.aichatos.xyz/">AI 聊天</a>
-        <a href="https://www.douyin.com/">抖音</a>
-        <a href="https://www.bilibili.com/">哔哩哔哩</a>
+        <!-- 博客类链接 -->
+        <div class="category blog">
+            <a href="https://foreverblog.cn/go.html">十年之约</a>
+            <a href="https://zhblogs.ohyee.cc/go">中文博客</a>
+            <a href="https://bokelu.suijiboke.gs/">博客录</a>
+            <a href="https://blogscn.fun/random.html">笔墨迹</a>
+        </div>
+        <!-- 社区类链接 -->
+        <div class="category community">
+            <a href="https://www.boyouquan.com/planet-shuttle">博友圈</a>
+            <a href="https://www.travellings.cn/go.html">开往</a>
+        </div>
+        <!-- 工具类链接 -->
+        <div class="category tools">
+            <a href="https://storeweb.cn/s/1656">个站商店</a>
+            <a href="https://baidu.com/">百度</a>
+            <a href="https://sz-api.ai-study.net/index.html">学习助手</a>
+            <a href="https://basic.sh.smartedu.cn/airclassroom/">上海微校</a>
+            <a href="https://www.kdocs.cn/">金山文档</a>
+            <a href="https://chat18.aichatos.xyz/">AI 聊天</a>
+            <a href="https://www.douyin.com/">抖音</a>
+            <a href="https://www.bilibili.com/">哔哩哔哩</a>
+        </div>
     </div>
 
     <div class="container tools">
@@ -212,6 +248,21 @@
 
             document.getElementById('convertResult').value = result.toFixed(2);
         }
+
+        // 分类显示逻辑
+        function showCategory(category) {
+            const allCategories = document.querySelectorAll('.category');
+            allCategories.forEach(cat => {
+                if (category === 'all' || cat.classList.contains(category)) {
+                    cat.style.display = 'flex';
+                } else {
+                    cat.style.display = 'none';
+                }
+            });
+        }
+
+        // 默认显示全部
+        showCategory('all');
     </script>
 </body>
 
