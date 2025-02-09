@@ -1,79 +1,89 @@
-[<DOCTYPE! html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="网页导览，快捷">
     <meta name="description" content="网页快捷导览">
-    <meta name="author" content="恺撒！">
+    <meta name="author" content="Kenny">
     <title>网页快捷导览</title>
-    <style type="text/css">
-        body {background-color:beige;}
-        h1 {color:saddlebrown;text-align:center;}
-        h2 {color:burlywood;text-align:left;}
-        h3 {color:beige;text-align:center;}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .content a {
+            text-decoration: none;
+            color: #333;
+            background: #e2e2e2;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .content a:hover {
+            background: #77aaff;
+            color: #fff;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <h1>网页快捷导览</h1>
+        </div>
+    </header>
 
-    <div id="header" style="background-color:burlywood">
-    <h1 style="margin-bottom:0 ;">网页快捷导览</h1>
-    <h3 style="margin-bottom:0 ;">更新于2024.1.29</h3>
-    <hr/>
+    <div class="container content">
+        <a href="https://baidu.com/">百度</a>
+        <a href="https://sz-api.ai-study.net/index.html">学习助手</a>
+        <a href="https://basic.sh.smartedu.cn/airclassroom/">上海微校</a>
+        <a href="https://www.kdocs.cn/">金山文档</a>
+        <a href="https://chat18.aichatos.xyz/">AI 聊天</a>
+        <a href="https://www.douyin.com/">抖音</a>
+        <a href="https://www.bilibili.com/">哔哩哔哩</a>
     </div>
 
-    <h2>信息搜索</h2>
-    <p>
-    <a href="https://baidu.com/">
-        <img src="https://s1.imagehub.cc/images/2024/01/19/a4134124ccf19a65dfe7e89a079c73ea.png" alt="百度一下，你就知道" width="110" length="110" border="0" />
-    </a>
-    <p/>
-    <hr/>
-
-    <h2>学习教育</h2>
-    <p>
-    <a href="https://sz-api.ai-study.net/index.html">
-        <img src="https://s1.imagehub.cc/images/2024/01/20/b6918872156b38a59932df140c3cac2a.th.png" alt="三个助手" width="110" length="110" border="0" />
-    </a>
-    <a href="https://basic.sh.smartedu.cn/airclassroom/">
-        <img src="https://s1.imagehub.cc/images/2024/01/20/c9f49e24438c60b7d476dc2d9418aaf7.th.png" alt="上海微校" width="110" length="110" border="0" />
-    </a>
-    </p>
-    <hr/>
-
-    <h2>高效办公</h2>
-    <p>
-    <a href="https://www.kdocs.cn/">
-        <img src="https://s1.imagehub.cc/images/2024/01/29/f0bb215448f648ae69d6ad8ead29e0f9.th.png" alt="金山文档" width="110" length="110" border="0" />
-    </a>
-    <a href="https://chat18.aichatos.xyz/">
-        <img src="">
-    ](https://chat18.aichatos.xyz/)https://chat18.aichatos.xyz/
-    </p>
-    <hr/>
-
-    <h2>休闲娱乐</h2>
-    <p>
-    <a href="https://www.douyin.com/">
-        <img src="https://s1.imagehub.cc/images/2024/01/26/00bf35e28c38a5639bd440eb303b7321.th.jpeg" alt="抖音" width="110" length="110" border="0" />
-    </a>
-    <a href="https://www.bilibili.com/">
-        <img src="https://s1.imagehub.cc/images/2024/01/26/e61b8ef0f676f0974c6a86dc9f4cbb5d.th.png" alt="哔哩哔哩" width="110" length="110" border="0" />
-    </a>
-    </p>
-    <hr/>
-    
-    <h2>今天过得怎么样😊</h2>
-    <form action="">
-    <input type="radio" name="mood" value="Happy">很好✌️<br>
-    <input type="radio" name="mood" value="notbad">一般般🧐<br>
-    <input type="radio" name="mood" value="bad">不太好😔
-    </form>
-    <hr/>
-    
-    <h2 style="text-align:center;">祝您拥有一个美好的未来！</h2>
-    <h2 style="text-align:center;">本网站由 恺撒！ 制作</h2>
-
+    <footer>
+        <p>祝您拥有一个美好的未来！</p>
+        <p>本网站由 恺撒！ 制作</p>
+    </footer>
 </body>
+
 </html>
