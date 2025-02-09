@@ -11,10 +11,13 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 0;
+            background-image: url('https://s1.imagehub.cc/images/2025/02/09/650632c5ed30c771379da4a18f6022a2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
         .container {
             width: 80%;
@@ -22,11 +25,12 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: rgba(51, 51, 51, 0.7); /* 半透明背景 */
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
         }
         header h1 {
             text-align: center;
@@ -58,11 +62,12 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background: #333;
+            background: rgba(51, 51, 51, 0.7); /* 半透明背景 */
             color: #fff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
         }
         .tools {
             margin-top: 20px;
@@ -70,15 +75,16 @@
             justify-content: center;
         }
         .tool {
-            background: #e2e2e2;
+            background: rgba(226, 226, 226, 0.7); /* 半透明背景 */
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px); /* 毛玻璃效果 */
         }
         .tool:hover {
-            background: #77aaff;
+            background: rgba(119, 170, 255, 0.7); /* 半透明背景 */
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
@@ -88,6 +94,7 @@
             margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
         }
         .tool button {
             padding: 10px 20px;
@@ -112,6 +119,13 @@
     </header>
 
     <div class="container content">
+        <a href="https://foreverblog.cn/go.html">十年之约</a>
+        <a href="https://www.boyouquan.com/planet-shuttle">博友圈</a>
+        <a href="https://zhblogs.ohyee.cc/go">中文博客</a>
+        <a href="https://bokelu.suijiboke.gs/">博客录</a>
+        <a href="https://blogscn.fun/random.html">笔墨迹</a>
+        <a href="https://storeweb.cn/s/1656">个站商店</a>
+        <a href="https://www.travellings.cn/go.html">开往</a>
         <a href="https://baidu.com/">百度</a>
         <a href="https://sz-api.ai-study.net/index.html">学习助手</a>
         <a href="https://basic.sh.smartedu.cn/airclassroom/">上海微校</a>
