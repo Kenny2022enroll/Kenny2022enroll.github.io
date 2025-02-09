@@ -66,7 +66,7 @@
             background: #e2e2e2;
             padding: 20px;
             margin: 10px;
-            width: 100px;
+            width: 150px; /* 增加宽度以适应文本 */
             text-align: center;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -89,22 +89,23 @@
         .tools {
             margin-top: 20px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
         }
         .tool {
             background: rgba(226, 226, 226, 0.4); /* 半透明背景 */
-            padding: 10px 20px;
-            margin: 0 10px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             backdrop-filter: blur(70px); /* 毛玻璃效果 */
+            width: 250px;
         }
         .tool:hover {
             background: rgba(119, 170, 255, 0.4); /* 半透明背景 */
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(70px); /* 毛玻璃效果 */
         }
         .tool input[type="text"], .tool textarea {
             width: 100%;
@@ -144,7 +145,6 @@
             </nav>
         </div>
     </header>
-
     <div class="container content">
         <!-- 博客类链接 -->
         <div class="category blog">
@@ -166,7 +166,6 @@
             <a href="https://basic.sh.smartedu.cn/airclassroom/">上海微校</a>
             <a href="https://www.kdocs.cn/">金山文档</a>
             <a href="https://chat18.aichatos.xyz/">AI 聊天</a>
-            <a href="https://www.douyin.com/">抖音</a>
             <a href="https://www.bilibili.com/">哔哩哔哩</a>
         </div>
     </div>
@@ -201,6 +200,102 @@
             </select>
             <button onclick="convert()">换算</button>
             <input type="text" id="convertResult" placeholder="换算结果..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>随机密码生成</h3>
+            <input type="text" id="passwordLength" placeholder="输入密码长度...">
+            <button onclick="generatePassword()">生成</button>
+            <input type="text" id="generatedPassword" placeholder="生成的密码..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>日期计算</h3>
+            <input type="date" id="startDate">
+            <input type="date" id="endDate">
+            <button onclick="calculateDate()">计算</button>
+            <input type="text" id="dateResult" placeholder="相差天数..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>BMI计算</h3>
+            <input type="text" id="weight" placeholder="体重(kg)...">
+            <input type="text" id="height" placeholder="身高(m)...">
+            <button onclick="calculateBMI()">计算</button>
+            <input type="text" id="bmiResult" placeholder="BMI结果..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>货币换算</h3>
+            <input type="text" id="currencyValue" placeholder="输入金额...">
+            <select id="currencyFrom">
+                <option value="USD">美元</option>
+                <option value="CNY">人民币</option>
+                <option value="EUR">欧元</option>
+            </select>
+            <select id="currencyTo">
+                <option value="USD">美元</option>
+                <option value="CNY">人民币</option>
+                <option value="EUR">欧元</option>
+            </select>
+            <button onclick="convertCurrency()">换算</button>
+            <input type="text" id="currencyResult" placeholder="换算结果..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>IP查询</h3>
+            <button onclick="getIP()">查询</button>
+            <input type="text" id="ipResult" placeholder="IP地址..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>二维码生成</h3>
+            <input type="text" id="qrText" placeholder="输入文本...">
+            <button onclick="generateQR()">生成</button>
+            <div id="qrCode"></div>
+        </div>
+
+        <div class="tool">
+            <h3>颜色选择器</h3>
+            <input type="color" id="colorPicker">
+            <input type="text" id="colorValue" placeholder="颜色值..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>文本统计</h3>
+            <textarea id="textStats" placeholder="输入文本..."></textarea>
+            <button onclick="countText()">统计</button>
+            <input type="text" id="textCount" placeholder="字符数..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>时间戳转换</h3>
+            <input type="text" id="timestamp" placeholder="输入时间戳...">
+            <button onclick="convertTimestamp()">转换</button>
+            <input type="text" id="timestampResult" placeholder="转换结果..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>URL编码/解码</h3>
+            <textarea id="urlText" placeholder="输入URL..."></textarea>
+            <button onclick="encodeURL()">编码</button>
+            <button onclick="decodeURL()">解码</button>
+            <textarea id="urlResult" placeholder="结果..." readonly></textarea>
+        </div>
+
+        <div class="tool">
+            <h3>MD5哈希</h3>
+            <textarea id="md5Text" placeholder="输入文本..."></textarea>
+            <button onclick="generateMD5()">生成</button>
+            <input type="text" id="md5Result" placeholder="MD5哈希值..." readonly>
+        </div>
+
+        <div class="tool">
+            <h3>Base64编码/解码</h3>
+            <textarea id="base64Text" placeholder="输入文本..."></textarea>
+            <button onclick="encodeBase64()">编码</button>
+            <button onclick="decodeBase64()">解码</button>
+            <textarea id="base64Result" placeholder="结果..." readonly></textarea>
         </div>
     </div>
 
@@ -249,6 +344,97 @@
             document.getElementById('convertResult').value = result.toFixed(2);
         }
 
+        function generatePassword() {
+            const length = document.getElementById('passwordLength').value;
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                password += charset.charAt(Math.floor(Math.random() * charset.length));
+            }
+            document.getElementById('generatedPassword').value = password;
+        }
+
+        function calculateDate() {
+            const startDate = new Date(document.getElementById('startDate').value);
+            const endDate = new Date(document.getElementById('endDate').value);
+            const diffTime = Math.abs(endDate - startDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            document.getElementById('dateResult').value = diffDays;
+        }
+
+        function calculateBMI() {
+            const weight = parseFloat(document.getElementById('weight').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const bmi = (weight / (height * height)).toFixed(2);
+            document.getElementById('bmiResult').value = bmi;
+        }
+
+        function convertCurrency() {
+            const value = parseFloat(document.getElementById('currencyValue').value);
+            const from = document.getElementById('currencyFrom').value;
+            const to = document.getElementById('currencyTo').value;
+            // 这里只是一个示例，实际货币换算需要调用API
+            const rates = { USD: 1, CNY: 6.5, EUR: 0.85 };
+            const result = (value * rates[to] / rates[from]).toFixed(2);
+            document.getElementById('currencyResult').value = result;
+        }
+
+        function getIP() {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ipResult').value = data.ip;
+                });
+        }
+
+        function generateQR() {
+            const text = document.getElementById('qrText').value;
+            const qrCode = document.getElementById('qrCode');
+            qrCode.innerHTML = '';
+            new QRCode(qrCode, {
+                text: text,
+                width: 128,
+                height: 128
+            });
+        }
+
+        function countText() {
+            const text = document.getElementById('textStats').value;
+            document.getElementById('textCount').value = text.length;
+        }
+
+        function convertTimestamp() {
+            const timestamp = document.getElementById('timestamp').value;
+            const date = new Date(parseInt(timestamp) * 1000);
+            document.getElementById('timestampResult').value = date.toLocaleString();
+        }
+
+        function encodeURL() {
+            const text = document.getElementById('urlText').value;
+            document.getElementById('urlResult').value = encodeURIComponent(text);
+        }
+
+        function decodeURL() {
+            const text = document.getElementById('urlText').value;
+            document.getElementById('urlResult').value = decodeURIComponent(text);
+        }
+
+        function generateMD5() {
+            const text = document.getElementById('md5Text').value;
+            const md5 = CryptoJS.MD5(text).toString();
+            document.getElementById('md5Result').value = md5;
+        }
+
+        function encodeBase64() {
+            const text = document.getElementById('base64Text').value;
+            document.getElementById('base64Result').value = btoa(text);
+        }
+
+        function decodeBase64() {
+            const text = document.getElementById('base64Text').value;
+            document.getElementById('base64Result').value = atob(text);
+        }
+
         // 分类显示逻辑
         function showCategory(category) {
             const allCategories = document.querySelectorAll('.category');
@@ -261,9 +447,4 @@
             });
         }
 
-        // 默认显示全部
-        showCategory('all');
-    </script>
-</body>
-
-</html>
+        // 默认显示
