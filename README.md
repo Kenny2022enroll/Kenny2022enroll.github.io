@@ -25,12 +25,12 @@
             overflow: hidden;
         }
         header {
-            background: rgba(51, 51, 51, 0.7); /* 半透明背景 */
+            background: rgba(51, 51, 51, 0.3); /* 半透明背景 */
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
-            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            backdrop-filter: blur(20px); /* 毛玻璃效果 */
         }
         header h1 {
             text-align: center;
@@ -62,12 +62,12 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background: rgba(51, 51, 51, 0.7); /* 半透明背景 */
+            background: rgba(51, 51, 51, 0.3); /* 半透明背景 */
             color: #fff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
-            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            backdrop-filter: blur(20px); /* 毛玻璃效果 */
         }
         .tools {
             margin-top: 20px;
@@ -75,13 +75,13 @@
             justify-content: center;
         }
         .tool {
-            background: rgba(226, 226, 226, 0.7); /* 半透明背景 */
+            background: rgba(226, 226, 226, 0.3); /* 半透明背景 */
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            backdrop-filter: blur(10px); /* 毛玻璃效果 */
+            backdrop-filter: blur(20px); /* 毛玻璃效果 */
         }
         .tool:hover {
             background: rgba(119, 170, 255, 0.7); /* 半透明背景 */
