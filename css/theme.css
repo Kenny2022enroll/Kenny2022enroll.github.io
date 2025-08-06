@@ -1,0 +1,18 @@
+:root {
+  --bg: #000;
+  --fg: #f0f0f0;
+  --accent: #00a8e8;
+  --card: rgba(255,255,255,0.05);
+  --border: rgba(0,168,232,0.3);
+}
+[data-theme="light"] {
+  --bg: #fafafa;
+  --fg: #121212;
+  --accent: #00355f;
+  --card: rgba(0,0,0,0.02);
+  --border: rgba(0,53,95,0.2);
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
