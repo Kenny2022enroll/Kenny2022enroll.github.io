@@ -1,11 +1,7 @@
-extends partials/base
-
-block content
-  article.post
-    header.post-header
-      h1= page.title
-      .meta
-        span.date= date(page.date, 'YYYY-MM-DD')
-        span.author= config.author
-    .post-content!= page.content
-  include partials/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>镜里镜外：自知与他知 · Kenny</title><meta name="description" content=""><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"><script src="https://unpkg.com/three@0.158/build/three.min.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><header id="header"><div class="wrap"><div class="logo"><a href="/">Kenny</a></div><nav><ul><li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li><li><a href="/tags">Tags</a></li><li><a href="/categories">Categories</a></li></ul></nav></div></header><button id="theme-toggle">🌗</button><main><article class="post"><header class="post-header"><h1>镜里镜外：自知与他知</h1><div class="meta"><span class="date">2025-06-01</span><span class="author">Kenny</span></div></header><div class="post-content"><p>古希腊德尔斐神庙上镌刻着”认识你自己”的箴言，中国古语有云”以铜为镜，可以正衣冠；以古为镜，可以知兴替；以人为镜，可以明得失”。镜子与自知的关系，自古以来就是人类思想的重要命题。有人认为镜子是自知的必要条件，有人则断言真正的自知者无需外镜。我认为，这两种观点看似对立，实则如车之两轮，鸟之双翼，缺一不可。<br>镜子的指的是他人的目光与评价。我们无法脱离社会关系而存在，他人的反馈恰如一面镜子，映照出我们难以自见的侧面。唐太宗以魏征为镜，照见自己治国理政的得失；鲁迅以笔为镜，照出国民灵魂的麻木。个体的行为与认知总是在特定社会结构中形成，没有绝对孤立的自知。那些宣称不需要镜子的人，或许正忽略了自我认知的社会维度。他人的评价与反馈，正是照亮我们前行道路的重要光源。<br>然而，仅靠外镜而缺乏内省，认知将流于表面。王阳明龙场悟道，在绝境中反求诸己，开创心学一脉；苏格拉底宣称”未经省察的人生不值得过”，将哲学从天上拉回人间。这种不假外求的自知，构成了人格的脊梁。陶渊明”不为五斗米折腰”，正是基于对自我价值的深刻把握；嵇康临刑前从容弹奏《广陵散》，展现的是内在精神世界的完满自足。心理学家荣格提出的”个体化”过程强调，真正的自我认知需要穿越集体无意识的迷雾，抵达那个独特的本真自我。在这个意义上，内省的自知确实可以超越外镜的限制，达到更高层次的精神自由。<br>实际上，健全的自我认知需要内外镜鉴的辩证统一。孔子”吾日三省吾身”的修养既包含对他人反馈的重视，也强调内在的反思；曾国藩的日记中既有对朝廷评价的在意，也有严苛的自我剖析。德国哲学家雅斯贝尔斯认为，真正的自我是在”交往”中实现的——既要保持自我的独立性，又要向他人敞开。苏轼”横看成岭侧成峰，远近高低各不同”的诗句，恰是这种多元认知的生动写照。<br>在这个社交媒体时代，我们每天都置身于无数”镜子”的包围中——点赞、评论、转发构成了数字化的镜子。但越是如此，越需要守护那个能够独处的内在空间。真正的自知者既不会拒绝所有外镜，也不会完全依赖外镜；既能从他人的反馈中汲取养分，又能保持独立思考的精神内核。最高层次的自知或许正是认识到：镜里镜外，本是一体；自知他知，圆融无碍。这种认知的智慧，将引领我们走向更加丰盈、自由的人生境界。</p>
+</div></article><section id="comments"><div id="waline"></div></section><script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script><link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"><script>Waline.init({
+  el: '#waline',
+  serverURL: 'https://your-waline.vercel.app',
+  lang: 'zh-cn',
+  dark: 'html[data-theme="dark"]'
+});</script><!--  ← 供子模板填充--></main><footer><div class="wrap"><p>&copy; 2025 Kenny</p><p class="powered">Powered by<a href="https://hexo.io" target="_blank"> Hexo</a> & Theme<a target="_blank" rel="noopener" href="https://github.com/you/space-cool"> SpaceCool</a></p></div></footer><script src="/js/starfield.js"></script><script src="/js/scroll.js"></script></body></html><script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script><script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script><script src="/js/gsap-scroll.js"></script><aside class="sidebar"><div id="search-widget"><input id="search-input" type="text" placeholder="Search posts…"><ul id="search-results"></ul></div></aside>

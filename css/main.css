@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Heiti SC', sans-serif;
   color: #fff;
   background: #0a0a0a;
 }
